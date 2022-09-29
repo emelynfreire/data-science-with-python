@@ -15,6 +15,8 @@ E para ativar:
 No windows: source venv/Scripts/activate ou .\activate
 No linux: source venv/bin/activete
 
+para desativar: deactivate
+
 
 Instalando pacote django:
 pip install django
@@ -26,6 +28,31 @@ Dentro da pasta app vai tá as configurações do projeto django.
 
 para rodar o sistema:
 python manage.py runserver
+
+Migração de configuração com banco de dado local sqlite3: banco com estrutura base, com tabelas com sessões e controles de usuários.
+python manage.py migrate
+
+Nisso agora criaremos um usuário super admin pra ter acesso ao sistema:
+python manage.py createsuperuser admin
+python manage.py createsuperuser 
+
+Nesse momento adiciona >> usuario>>email>>senha
+
+Após isso executar projeto e no link: http://127.0.0.1:8000/admin/
+usuario:admin 
+senha:minhasenha123
+
+----------------------------------------------------------
+Criação app - aplicação CRUD
+
+-----------------------------
+
+
+
+
+
+
+
 
 
 
