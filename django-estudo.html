@@ -1,6 +1,8 @@
-Instalar python
+#CRIANDO PROJETO DJANGO
 
-criar ambiente virtual:
+## 0 Instalar python
+
+## 1. criar ambiente virtual:
 
 Na pasta dp projeto:
 o VENV tem a responsabilidade de isolar o projeto do sistema operacional.
@@ -13,7 +15,7 @@ Nisso vai criar uma pasta com nome_da_venv e dentro os módulos.
 
 E para ativar:
 No windows: source venv/Scripts/activate ou .\activate
-No linux: source venv/bin/activete
+No linux: source venv/bin/activate
 
 para desativar: deactivate
 
@@ -21,18 +23,18 @@ para desativar: deactivate
 Instalando pacote django:
 pip install django
 
-criando projeto django:
-django-admin startproject app . (o ponto final é pra ele não criar outra pasta)
+## 3. criando projeto django:
+django-admin startproject nome_projeto . (o ponto final é pra ele não criar outra pasta)
 
-Dentro da pasta app vai tá as configurações do projeto django.
+Dentro da pasta nome_projeto vai tá as configurações do projeto django execute.
 
-para rodar o sistema:
+## 4. para rodar o sistema:
 python manage.py runserver
 
-Migração de configuração com banco de dado local sqlite3: banco com estrutura base, com tabelas com sessões e controles de usuários.
+## 5. Migração de configuração com banco de dado local sqlite3: banco com estrutura base, com tabelas com sessões e controles de usuários.
 python manage.py migrate
 
-Nisso agora criaremos um usuário super admin pra ter acesso ao sistema:
+## 6. Nisso agora criaremos um usuário super admin pra ter acesso ao sistema:
 python manage.py createsuperuser admin
 python manage.py createsuperuser 
 
@@ -42,10 +44,9 @@ Após isso executar projeto e no link: http://127.0.0.1:8000/admin/
 usuario:admin 
 senha:minhasenha123
 
-----------------------------------------------------------
-Criação app - aplicação CRUD
+# Criação app - aplicação CRUD
 
------------------------------
+
 
 
 
